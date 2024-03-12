@@ -1,0 +1,4 @@
+all:
+    nasm -f elf64 sgn.asm -o sgn.o
+    gcc main.c -o main.o -c
+    gcc main.o sgn.o -o out -g3 -ggdb
